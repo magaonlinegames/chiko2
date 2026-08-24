@@ -1,0 +1,52 @@
+.clxHolder{
+    height: 500px;
+    overflow: auto;
+}
+
+.twoBX{
+    width: 48%;
+    margin-left: 1%;
+    padding: 3px;
+    float: left;
+}
+#idimg_1{
+    height: 100%;
+}
+#idimg_1 span{
+    background-image: url(images/oldmoney.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 98%;
+    display: block;
+}   
+
+#twoID_2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#twoID_2 span{
+    font-size: 25px;
+}
+
+.twoBX p{
+    margin-bottom: 4%;
+}
+
+@media screen and (max-width: 795px)
+and (min-width: 0) {
+    .clxHolder{
+        height: fit-content;
+    }
+    .twoBX{
+        width: 99%;
+        height: auto;
+        float: none;
+    }
+
+    #idimg_1 span{
+    height: 410px;
+    width: 98%;
+    display: block;
+}   
+}
