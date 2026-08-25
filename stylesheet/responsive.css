@@ -344,7 +344,8 @@
       padding: 0 0;
     }
     .header #mainnav-mobi ul li.nav-sing {
-      display: none;
+      /* display: none; */
+      padding-left: 14px;
     }
     .header #mainnav-mobi {
         max-height: calc(100vh - 84px);
