@@ -989,6 +989,7 @@ input::-webkit-input-placeholder {
     right: 0;
     bottom: 0;
     background-color: rgb(255, 95, 96, 0.8);
+    background-color: rgb(60 76 150);
 }
 .quick-link .section-overlay {
     position: absolute;
@@ -996,7 +997,8 @@ input::-webkit-input-placeholder {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(63, 76, 153, 0.8);
+    /* background-color: rgb(63, 76, 153, 0.8); */
+    background-color: rgb(51 51 51);
 }
 .section-overlay183251{
     position: absolute;
@@ -2044,7 +2046,7 @@ input::-webkit-input-placeholder {
     padding: 12px 32px 12px 32px; 
 }   
 .flat-slider .rev_slider_wrapper #rev-slider1 ul li .sl-address a{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
 }
 .flat-slider .rev_slider_wrapper #rev-slider1 ul li .sl-address a i{
@@ -2165,6 +2167,7 @@ input::-webkit-input-placeholder {
 }
 .iconbox-benefit-style1 .iconbox-content a{
     color: #fff;
+    color: black;
 }
 
 .iconbox-benefit-style1 .iconbox{
