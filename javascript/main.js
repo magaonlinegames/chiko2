@@ -344,7 +344,7 @@
             e.stopImmediatePropagation()
         });
     };
-
+//
     var goTop =  function() {
         $(window).scroll(function() {
             if ( $(this).scrollTop() > 800 ) {
