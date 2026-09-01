@@ -4,26 +4,32 @@
 
 .clxHolder{
     height: 500px;
-    overflow: auto;
+    /* overflow: auto; */
 }
-
+.sec1_twobx{
+    float: left;
+}
 .twoBX{
     width: 48%;
     margin-left: 1%;
     padding: 3px;
-    float: left;
 }
-#idimg_1{
+.imgsecs{
     height: 100%;
 }
-#idimg_1 span{
-    background-image: url(images/oldmoney.png);
+.imgsecs span{
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 98%;
     display: block;
+}
+#idimg_1 span{
+    background-image: url(images/oldmoney.png);  
 }   
+#idimg_2 span{
+    background-image: url(images/oldmoney2.png);  
+}  
 #twoID_1{
     color: #f9b652;
 }
@@ -50,7 +56,7 @@ and (min-width: 0) {
         float: none;
     }
 
-    #idimg_1 span{
+    .imgsecs span{
     height: 410px;
     width: 98%;
     display: block;
@@ -159,4 +165,11 @@ and (min-width: 0) {
         width: 98%;
         float: none;
     }
+}
+
+
+
+/* SECTION 2 */
+.sec2_twobx{
+    float: right;
 }
