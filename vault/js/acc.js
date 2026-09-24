@@ -64,7 +64,11 @@ $("#lme-in-btn").click(
       })
       .catch((error) => {
           console.log("Error getting documents: ", error);
-      });
+          $('.security p').text('Sign in failed. Try again when connection is secured');
+        
+          setTimeout(function(){ $('.security').addClass('hide');$('.security p').text(' ');},3000);
+      
+        });
 
       $('.security').removeClass('hide');
       // getMeLogins(email);
