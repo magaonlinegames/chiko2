@@ -185,64 +185,35 @@ function signIn(){
 
     console.log('LOGIN:  EMAIL: '+ email);
 
-    var docRef = firebase.firestore().collection("VAULTSECURITY").doc(email);
+            firebase.firestore().collection("VAULTSECURITY").get().then((querySnapshot) => 
+             {
+                querySnapshot.forEach((doc) => {
+                    // doc.data() is never undefined for query doc snapshots
+                    console.log(doc.id, " VS33=> ", doc.data());
+                    if (doc.data().email == email) {
+                      account = doc.data().account;
+                      getVaultDetails(account);
+                      $("#lme-in-btn").show();
+                      
+                    }else{
+                      console.log('nothingg');
+                      $("#lme-in-btn").show();
+                      $("#error").show();
+                      setTimeout(
+                        function(){
+                          $("#error").hide();
+                        }, 3000
+                      );
 
-    docRef.get().then((doc) => {
-        if (doc.exists) {
-            $(".login").hide();
-
-            console.log("lgn dta:", doc.data());
-            account = doc.data().account;
-            getVaultDetails(account);
-        } else {
-            // doc.data() will be undefined in this case
-            console.log("No such document! 22 "+email);
-            setTimeout(
-              function(){
-                if (account == '') {
-                  $("#lme-in-btn").show();
-                  
-                }
-              }, 4000
-            );
-
-            firebase.firestore().collection("VAULTSECURITY").get().then((querySnapshot) => {
-              querySnapshot.forEach((doc) => {
-                  // doc.data() is never undefined for query doc snapshots
-                  console.log(doc.id, " VS33=> ", doc.data());
-                  if (doc.data().amount == email) {
-                    account = doc.data().account;
-                    getVaultDetails(account);
-                    $("#lme-in-btn").show();
-                    
-                  }else{
-                    console.log('nothingg');
-                    $("#lme-in-btn").show();
-                    $("#error").show();
-                    setTimeout(
-                      function(){
-                        $("#error").hide();
-                      }, 3000
-                    );
-
-                  }
-                  //  checkvaultimg(doc.data().vaultimg);
+                    }
+                    //  checkvaultimg(doc.data().vaultimg);
+                  });
               });
-          });
-        }
-    }).catch((error) => {
-        console.log("Error getting document:", error);
-        $("#error").show();
-        $("#lme-in-btn").show();
-        setTimeout(
-          function(){
-            $("#error").hide();
-          }, 3000
-        );
-    });
 
-    $('.security').removeClass('hide');
-    // getMeLogins(email); 
+  
+
+              $('.security').removeClass('hide');
+              // getMeLogins(email); 
 
   }else {
     // WARNING: error;
