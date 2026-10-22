@@ -4,11 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/acc.css">
     <link rel="stylesheet" href="css/casty.css">
     <link rel="icon" href="../img/logo-WHITE.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Vault | Deutsche Wertlager GmbH</title>
   </head>
@@ -50,6 +59,249 @@
     </div>
 
 
+
+
+    <!-- UPGRADED -->
+    <div id="storage_account" class="scACC" >
+      <div id="scSideBar" class="scSidesbars">
+        <div id="closeVaultMenuBX">
+          <i class="material-icons" onclick="closeVaultMenu();">close</i>
+        </div>
+        <div id="logoBX1">
+          <span id="logobx"></span>
+          <span id="logoname" class="scLtxt">GmbH</span>
+          <span id="logoname1" class="scLtxt">SECURE STORAGE</span>
+        </div>
+        <div  id="sideLinksBX">
+           <ul>
+            <li onclick="closeVaultMenu();">
+              <i class="fa fa-home"></i>
+              <span> Dashboard </span>
+            </li>
+            <li onclick="closeVaultMenu();">
+              <i class="fa fa-shield"></i>
+              <span>My Vault Items</span>
+            </li>
+            <li onclick="closeVaultMenu();">
+              <i class="fa fa-tag"></i>
+              <span>Billing</span>
+            </li>
+            <li onclick="closeVaultMenu();">
+              <i class="fa fa-file"></i>
+              <span>Access logs</span>
+            </li>
+            <li onclick="closeVaultMenu();">
+              <i class="fa fa-gear"></i>
+              <span>Security Settings</span>
+            </li>
+           </ul>
+        </div>
+        <div id="btmSideLinksBX">
+          <ul>
+            <li>
+              <i class="fa fa-lock"></i>
+              <span>
+                24/7 Vault Support
+              </span>
+              
+            </li>
+            <li href="#">
+              <i class="fa fa-sign-out"></i>
+              <span>
+                Logout
+              </span>
+              
+            </li>
+
+            <hr>
+            <li id="vaultIDS">
+              <span>VAULT ID: PV-7824-AX19</span>
+              <span id="gg">All systems operational</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="scMainBar" class="scSidesbars">
+        <div class="scCTNR" id="vaultmaincontainer">
+          
+          <div id="scTOPBX">
+            <h3>Dashboard</h3>
+            <p class="txt3">Overwiew of your private vault and account status</p>
+
+            <div id="hsbtn">
+              <i class="material-icons">verified_user</i>
+              <span id="hs1">High Security</span>
+              <span id="greendot"></span>
+            </div>
+            <div id="menubx" onclick="openVaultMenu();">
+              <i class="material-icons">dehaze</i>
+              <span id="hs1">Menu</span>
+            </div>
+          </div>
+
+          <div id="scTOP1BX">
+            <div class="scCard scCard3">
+              <div class="scCardCOL2" id="cardSymbolBX">
+                <i class="fa fa-bank"></i>
+              </div>
+              <div class="scCardCOL2" id="cardContentBX">
+                <span class="txt3">Vault Status</span> <br>
+                <span class="txt1">Secure & Monitored</span> <br>
+                <span class="txt4">24/7 survelliance * Biometric access * Intrusion protection</span>
+                <div id="sysbx">
+                  <i></i>
+                  <span>All systems secure</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="scCard scCard3">
+              
+              <div class="scCardCOL2" id="cardContentBX">
+                <span class="txt3">Storage Charges Paid</span> <br>
+                <span class="txt1 doe">$1,850.00</span> <br>
+                <span class="txt4">As of May 23, 2024</span>
+
+              </div>
+
+              <div class="scCardCOL2" id="cardSymbolBX">
+                <i class="fa fa-bank"></i>
+              </div>
+            </div>
+
+            <div class="scCard scCard3">
+              
+              <div class="scCardCOL2" id="cardContentBX">
+                <span class="txt3">Balance Left to Pay</span> <br>
+                <span class="txt1 doe">$620.00</span> <br>
+                <span class="txt4">Due June, 2024</span>
+
+              </div>
+
+              <div class="scCardCOL2" id="cardSymbolBX">
+                <i class="fa fa-bank"></i>
+              </div>
+            </div>
+          </div>
+
+          <br><br>
+          <div class="holder">
+            <div id="scTOP2BX_1" class="scTOP2BX">
+              <div id="stp2_r1">
+                <i class="material-icons">unarchive</i>
+                <span class="txt2 dshTitle">Stored Items</span>
+              </div>
+
+              
+              <table>
+                <thead>
+                  <tr>
+                      <th>ITEM</th>
+                      <th>LOCATION</th>
+                      <th>INSURANCE VALUE</th>
+                      <th>STATUS</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+
+                      <div class="rw extndo">
+                        <div class="rwcol2">
+                          <span class="itemImage"></span>
+                        </div>
+                        <div class="rwcol2" id="sc2">
+                          <div class="itemIMGTXTBX">
+                            <span class="cx1">Gold Bars</span>
+                            <span class="cx2">10 * 1 kg Bars</span>
+                          </div>
+                        
+                        </div>
+                      </div>
+
+                    </td>
+
+
+                    <td>
+                      <div class="locationUI">
+                        <i class="material-icons">place</i>
+                        <span class="locationTXT">Vault 3 - Compartment G-17</span>
+                      </div>
+                      
+                    </td>
+
+                    <td>
+                      <span>$750,000</span>
+                      <span class="luiTXT1">Full Coverage</span>
+                    </td>
+
+                    <td>
+                      <span class="statusTXTBX">
+                        <i></i>
+                        Stored
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+                    
+            </div>
+          </div>
+
+
+          <br><br>
+          <div class="holder" id="recentActivity_holder">
+            <div id="scTOP2BX_2" class="scTOP2BX">
+              <div id="stp2_r1">
+                <i class="material-icons">av_timer</i>
+                <span class="txt2 dshTitle">Recent Activity</span>
+              </div>
+              <br>
+              <ul>
+                <li>
+                  <div class="scCOL3 scCOL3_1" id="scCOL3_1">
+                    <i class="material-icons symb1">assignment</i>
+                  </div>
+
+                  <div class="scCOL3 scCOL3_2">
+                    <span class="primaryTXT">Storage payment received</span>
+                    <span class="secondaryTXT">$1,850.00 credited to account</span>
+                  </div>
+
+                  <div class="scCOL3 rctActvtyDate">
+                    <span class="secondaryTXT">May 23,2024 - 1110:32 AM</span>
+                  </div>
+                </li>
+
+                <li class="yello">
+                  <div class="scCOL3 scCOL3_1">
+                    <i class="material-icons symb1">person</i>
+                  </div>
+
+                  <div class="scCOL3 scCOL3_2">
+                    <span class="primaryTXT">Storage payment received</span>
+                    <span class="secondaryTXT">$1,850.00 credited to account</span>
+                  </div>
+
+                  <div class="scCOL3">
+                    <span class="secondaryTXT">May 23,2024 - 1110:32 AM</span>
+                  </div>
+                </li>
+
+
+              </ul>
+             
+                    
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
     
     <div class="acc-cnt account_2" id="acc-cnt-2">
       <header>
@@ -799,5 +1051,6 @@
     <script type="text/javascript" src="js/firebase.js"></script>
     <script type="text/javascript" src="js/dbb.js"></script>
     <script type="text/javascript" src="js/acc.js"></script>
+    <script type="text/javascript" src="js/new.js"></script>
   </body>
 </html>
