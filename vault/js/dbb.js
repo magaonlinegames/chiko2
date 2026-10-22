@@ -11,7 +11,8 @@ $('document').ready(
 );
     function getVaultDetails(acc){
         $(".login").hide();
-        $("#acc-cnt-2").fadeIn();
+        // $("#acc-cnt-2").fadeIn();
+        $("#storage_account").fadeIn();
         console.log("Please Wait...");
         //$('#progress-2').removeClass('hide');
         //Load
