@@ -59,6 +59,8 @@ $("#lme-in-btn").click(
         console.log('DOCUMENT FOUND: 770');
           querySnapshot.forEach((doc) => {
               // doc.data() is never undefined for query doc snapshots
+               $("#storage_account").fadeIn();
+              
               console.log(doc.id, " => ", doc.data());
           });
       })
