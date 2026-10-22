@@ -1,3 +1,384 @@
+/* CTRL */
+#storage_account{
+  position: fixed;
+  z-index: 777;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000;
+  width: 100%;
+  display: none;
+}
+
+
+#scSideBar{
+  background-color: #001217;
+  width: 30%;
+  border: 1px solid black;
+  z-index: 777;
+  min-width: 196px;
+}
+#closeVaultMenuBX{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 74px;
+  padding: 29px;
+  color: #ffffff;
+  background-color: #011217;
+  display: none;
+}
+#closeVaultMenuBX i{
+  cursor: pointer;
+  position: absolute;
+  right: 14px;
+}
+.zindex888{
+  z-index: 888!important;
+}
+#scMainBar{
+  background-color: #00171d;
+  width: 70%;
+  overflow: auto;
+  z-index: 778;
+}
+#vaultmaincontainer{
+  position: relative;
+  z-index: 777;
+}
+.scSidesbars{
+  float: left;
+  height: 100%;
+}
+
+#logoBX1{
+  color: #ddb763;
+  z-index: 999;
+  position: relative;
+}
+#logobx{
+  background-color: pink;
+}
+#logobx{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url('../dwlogo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.scLtxt{
+  text-align: center;
+  font-size: 20px;
+}
+#logoname{
+  display: block;
+}
+#logoname1{
+  display: block;
+  font-size: 10px;
+}
+#btmSideLinksBX{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#vaultIDS{
+  font-size: 10px;
+}
+#sideLinksBX ul li,
+#btmSideLinksBX ul li{
+  border-radius: 10px;
+  padding: 6px;
+  width: 90%;
+  margin: auto;
+  margin-top: 8px;
+  list-style: none;
+  color: #b4b4b4;
+}
+#sideLinksBX ul li i,
+#btmSideLinksBX ul li i{
+  font-size: 20px;
+}
+#btmSideLinksBX ul li span{
+  position: relative;
+  left: 12px;
+}
+#sideLinksBX ul li span{
+  position: relative;
+  top: -2px;
+  left: 12px;
+}
+#vaultIDS span{
+  display: block;
+}
+#gg{
+  color: green;
+}
+.scCTNR{
+  width: 95%;
+  margin: auto;
+}
+#scTOPBX{
+  position: relative;
+}
+#scTOPBX h3{
+  color: white;
+}
+#scTOP1BX{
+  overflow: auto;
+  /* background-color: red; */
+}
+#hsbtn{
+  border: 1px solid grey ;
+  padding: 6px;
+  display: inline-block;
+  border-radius: 6px;
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  color: #bbbbbb;
+}
+#menubx{
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  color: #bbbbbb  ;
+  z-index: 778;
+  display: none;
+}
+#hs1{
+  position: relative;
+  top: -7px;
+}
+#greendot{
+  padding: 4px;
+  background-color: green;
+  display: inline-block;
+  border-radius: 30px;
+  position: relative;
+  top: -7px;
+}
+@media screen and (max-width: 740px) 
+and (min-width: 0px){
+  #hsbtn{
+    display: none;
+  }
+  .scSidesbars{
+    position: absolute;
+  }
+  #scMainBar{
+    width: 100%;
+  }
+  #menubx{
+    display: block;
+  }
+}
+/* cards */
+.scCard{
+  border: 1px solid #454545;
+  padding: 19px;
+  overflow: auto;
+  min-width: 300px;
+  max-width: 448px;
+}
+.scCard3{
+  width: 30%;
+  margin-top: 15px;
+  border-radius: 20px;
+  height: 153px;
+  float: left;
+  margin-right: 20px;
+}
+.scCardCOL2{
+  float: left;
+
+}
+@media screen and (max-width: 932px) 
+and (min-width: 0){
+  .scCard {
+    width: 98%;
+  }
+}
+.txt1{
+  font-size: 20px;
+  color: white;
+}
+.txt3{
+  font-size: 15px;
+  color: #7d7d7d;
+}
+.txt4{
+  font-size: 10px;
+  color: #959595;
+}
+#cardSymbolBX{
+  width: 30%;
+  font-size: 66px;
+}
+#cardSymbolBX i{
+    position: relative;
+    top: 10px;
+    color: #865e10;
+    color: #b3b300;
+}
+#cardContentBX{
+  width: 68%;
+  position: relative;
+  top: 4px;
+}
+#sysbx i{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 3px;
+    background-color: green;
+}
+#sysbx span{
+  color: green;
+}
+.doe{
+  color: #fdb221;
+  color: yellow;
+}
+.ic{
+
+}
+.scTOP2BX ul li{
+  margin-top: 10px;
+  display: block;
+  overflow: auto;
+}
+.scTOP2BX .material-icons{
+  font-size: 35px;
+  color: #fdb221;
+  /* color: yellow; */
+}
+.dshTitle{
+  position: relative;
+  top: -11px;
+  font-size: 19px;
+  color: black;
+}
+#recentActivity_holder .dshTitle{
+  color: white;
+}
+#scTOP2BX_1{
+  background-color: #eaeaea;
+}
+#scMainBar table{
+}
+.holder{
+}
+.scTOP2BX{
+  width: 98%;
+  min-width: 400px;
+  overflow: auto;
+  border: 1px solid grey;
+  padding: 14px;
+  border-radius: 19px;
+}
+
+.statusTXTBX{
+  display: block;
+  background-color: green;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.itemImage{
+  background-color: grey;
+  display: block;
+  width: 71px;
+  height: 59px;
+  /* background-image: url('../img/gold-v.jpeg'); */
+  background-size: cover;
+  background-position: center;
+}
+.itemIMGTXTBX{
+  position: relative;
+  top: 11px;
+}
+.rwcol2{
+  float: left;
+  width: 48%;
+}
+.cx1{
+  font-size: 14px;
+}
+.cx2{
+  font-size: 11px;
+}
+.rw{
+  overflow: auto;
+  /* background-color: grey; */
+  width: 150px;
+}
+#sc2{
+  /* background-color: pink; */
+}
+
+.locationUI{
+  width: 150px;
+  position: relative;
+}
+.locationUI i{
+  font-size: 19px!important;
+}
+.locationTXT{
+  width: 90%;
+  position: absolute;
+  top: -10px;
+}
+.luiTXT1{
+  font-size: 12px;
+  display: block;
+}
+
+.scCOL3{
+  float: left;
+  width: 30%;
+}
+.scCOL3 .secondaryTXT{
+  position: relative;
+  top: 2px;
+}
+.scCOL3_1{
+  width: 62px;
+}
+.scCOL3_2{
+  min-width: 260px;
+  /* background-color: red; */
+}
+.primaryTXT{
+  color: white;
+  font-size: 18px;
+  display: block;
+
+}
+.secondaryTXT{
+  color: grey;
+  font-size: 13px;
+}
+
+.symb1{
+  border: 1px solid green;
+  color: green!important;
+  padding: 6px;
+  font-size: 21px!important;
+  border-radius: 18px;
+}
+
+.yello i{
+  color: yellow!important;
+  border-color: yellow;
+}
+
+
 
 *{
   padding: 0;
